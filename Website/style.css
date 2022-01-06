@@ -1,0 +1,24 @@
+body {
+	font-family:돋움;
+}
+		
+a {text-decoration:none;}
+
+a:link {
+	color:#3d3d3d;
+}
+
+a:visited {
+	color:#3d3d3d;
+}
+
+a:hover {
+	color:#d57fff;
+}
+
+hr.board {
+	border-color:#cd77fc;
+	border-style:solid;
+	border-width:2px;
+			}
+

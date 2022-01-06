@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>이벤트게시물</title>
+		<meta charset="UTF-8">
+		<link type="text/css" rel="stylesheet" href="style.css"></link>
+		<script src="jquery-3.5.1.js"></script>
+		<style>
+			img.pos {
+				position:absolute;
+				top:8px;
+				left:260px;
+				animation-name:move;
+				animation-duration:5s;
+				animation-iteration-count:infinite;
+				animation-direction:alternate;
+				animation-timing-function:ease-in-out;
+			}
+			
+			@keyframes move {
+				from {opacity : 0}
+				to{opacity : 1}
+			}
+		</style>
+	</head>
+	
+	<body>
+		<center>
+		<div>
+			<a href="#"><img src="images/inform_event1.jpg"></a>
+			<a href="#"><img class="pos"src="images/inform_event2.jpg"></a>
+		</div>
+		<center>
+	</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login Page</title>
+		<meta charset="UTF-8">
+		<link type="text/css" rel="stylesheet" href="style.css"></link>
+		<script src="list.js"></script>
+		<script>
+			function loginCheck() {
+				var a = login.id.value;
+				var b = login.pw.value;
+				var check = 0;
+				
+				if((member_id[0] == a) && (member_pw[0] == b)) {
+					check = 1;
+					
+					return true;
+				}
+				
+				if(check == 0) {
+					alert("아이디 혹은 비밀번호가 잘못 되었습니다.");
+					login.id.value = "";
+					login.pw.value = "";
+					return false;
+				}
+			}
+		
+		</script>
+		
+		<style>
+			legend.st {
+				background-color:black;
+				color:white;
+				border-top-left-radius:20px;
+				border-bottom-right-radius:20px;
+				border-style:double;
+				border-color:#d57fff;
+				padding:5px;
+			}
+		</style>
+	</head>
+	
+	<body>
+	<center>
+			<form action="login_s.jsp" method="POST" target="menu" name="login">
+			<fieldset class="size">
+			<legend class="st">로그인을 하시면 사이트의 모든 콘텐츠를 이용하실 수 있어요!</legend>
+			<p><input type="text" name="id" value="" placeholder="아이디" class="size2"></p>
+			<p><input type="password" name="pw" value="" placeholder="비밀번호" class="size2"></p>
+			
+			<p>
+				<button type="button" onclick="javascript:if(loginCheck() == true)submit()">로그인</button>
+			</p>
+			</fieldset>
+			</form>
+		<br>
+		계정이 없다면? 지금 <b>가입</b>하세요!<br>
+		▼클릭하기<br><br>
+		<button type="button" onclick="javascript:window.open('member.html','')">회원가입</button>
+	</center>
+	</body>
+</html>
