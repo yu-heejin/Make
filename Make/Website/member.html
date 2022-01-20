@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>회원가입</title>
+	<meta charset="UTF-8">
+	<style>
+		fieldset.con {
+				width:700px;
+				height:470px;
+			}
+	</style>
+	<link type="text/css" rel="stylesheet" href="style.css"></link>
+	<script src="list.js"></script>
+	<script>
+		function agree() {
+			var ch = member.check.value;
+			var ch2 = 1;
+			
+			var idVar = member.mem_id.value;
+			var pwVar1 = member.mem_pw.value;
+			var pwVar2 = member.mem_pw2.value;
+			var nameVar = member.mem_name.value;
+			var emailVar1 = member.mem_emailvalue;
+			var emailVar2 = member.mem_email2.value;
+			var numVar1 = member.mem_num.value;
+			var numVar2 = member.mem_num2.value;
+			var numVar3 = member.mem_num3.value;
+			var genVar = member.gender.value;
+			var addVar = member.address.value;
+			var bthVar1 = member.year.value;
+			var bthVar2 = member.month.value;
+			var bthVar3 = member.day.value;
+			
+			var inform = new Array(idVar, pwVar1, pwVar2, nameVar, emailVar1, emailVar2, numVar1, numVar2, numVar3, genVar, addVar, bthVar1, bthVar2, bthVar3);
+			
+			for(i=0; i<inform.length; i++) {
+				if(inform[i] == "") {
+					ch2 = 0;
+					break;
+				}
+			}
+			
+			if(ch2 == 0) {
+				alert("모든 항목을 빠짐없이 입력하세요.");
+				return false;
+			} else {
+				if(pwVar1 === pwVar2) {
+					if(ch == 1) {
+						return true;
+					} else {
+						alert("개인정보 약관에 동의하여야합니다.");
+						return false;
+					}
+				} else {
+					alert("비밀번호를 정확히 입력해주세요.");
+				}
+			
+			}
+		}
+		
+		function idCheck() {
+			if(member.mem_id.value == member_id[0]) {
+				alert("중복된 아이디입니다.");
+				member.mem_id.value = "";
+			} else if(member.mem_id.value == "") {
+				alert("정확한 아이디를 입력해주세요.");
+			} else {
+				alert("사용가능한 아이디입니다.");
+			}
+		}
+		
+		function winClose() {
+			window.open('','_self').close();     
+		}
+	</script>
+	</head>
+	
+	<body>
+		<center>
+		<form action="member_s.jsp" method="POST" target="_top" name="member">
+			<fieldset class="con">
+				<h3>회원가입</h3>
+				<table>
+					<tr>
+						<td>아이디</td>
+						<td><input type="text" name="mem_id" value="" required size="12">
+						<button type="button" onclick="idCheck()">중복확인</button>
+						<font size="1">*아이디는 영문 및 숫자로 이루어져야합니다.</font></td>
+					</tr>
+					<tr>
+						<td>비밀번호 / 비밀번호확인</td>
+						<td><input type="password" name="mem_pw" value="" required size="12">
+						<input type="password" name="mem_pw2" value="" required size="12">
+						<font size="1">*비밀번호는 영문, 숫자포함 5자리 이상</font>
+						</td>
+					</tr>
+					<tr>
+						<td>이름</td>
+						<td><input type="text" name="mem_name" value="" required size="12"></td>
+					</tr>
+					<tr>
+						<td>이메일</td>
+						<td><input type="text" name="mem_email" value="" required size="10"> @
+						<input type="text" list="e_list" name="mem_email2" value="" required size="10">
+							<datalist id="e_list">
+								<option value="naver.com">naver.com</option>
+								<option value="daum.net">daum.net</option>
+								<option value="nate.com">nate.com</option>
+							</datalist>
+						</td>
+					</tr>
+					<tr>
+						<td>휴대폰번호</td>
+						<td><select name="mem_num" required>
+							<option value="010">010</option>
+							<option value="011">011</option>
+							<option value="016">016</option>
+							<option value="019">019</option>
+							<option value="017">017</option>
+						</select>
+						-
+						<input type="text" name="mem_num2" value="" required size="7">
+						-
+						<input type="text" name="mem_num3" value="" required size="7"></td>
+					</tr>
+					<tr>
+						<td>성별</td>
+						<td><input type="radio" name="gender" value="woman" required>여자
+						<input type="radio" name="gender" value="man" required>남자</td>
+					</tr>
+					<tr>
+						<td>주소</td>
+						<td><input type="text" name="address" value="" required size="30"></td>
+					</tr>
+					<tr>
+						<td>생일</td>
+						<td>
+						<input type="text" name="year" value="" required size="5"> 년
+						<select name="month" required>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+						월
+						<select name="day" required>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select>
+						일
+						</td>
+					</tr>
+					
+				</table>
+				<p></p><p></p>
+				<hr>
+				<p></p><p></p>
+				<p align="center"><개인정보 이용약관 안내(필수)></p>
+				<textarea rows="8" cols="70" readonly>
+이 약관은 InforPETion이 제공하는 서비스의 이용과 관련하여 회사와 회원과의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.
+
+정보통신망법 규정에 따라 InforPETion에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
+
+
+[수집하는 개인정보 항목]
+
+이용자는 회원가입을 해야만 정보 검색, 뉴스 보기 등 대부분의 서비스를 이용할 수 있습니다.
+이용자가 서비스를 이용하기 위해 회원가입을 할 경우, InforPETion은 서비스 이용을 위해 필요한 최소한의 개인정보를 수집합니다.
+
+- 이름, 이메일, 휴대전화번호, 성별, 주소, 생일
+
+
+서비스 이용과정이나 사업처리 과정에서 아래와 같은 정보들이 자동으로 생성되어 수집될 수 있습니다.
+
+- 쿠키, 방문일시, 서비스 이용기록 등
+
+
+만 14세 미만 가입자에 경우 다음과 같은 항목들이 요구됩니다.
+
+- 부모님 및 보호자의 연락처 및 동의여부
+
+
+유료 서비스를 이용하는 과정에서 아래와 같은 정보들이 요구됩니다.
+
+1) 신용카드 결제 : 카드사 및 카드번호 등의 정보
+2) 휴대전화 결제 : 휴대폰번호, 통신사, 결제 승인번호 등
+3) 계좌이체 : 은행명, 계좌번호 등
+4) 상품권 등의 기프트카드 및 온라인 쿠폰 : 해당 쿠폰의 결제번호
+
+* 이 외의 기타 결제 수단을 이용할 경우 해당 수단과 관련된 정보가 요구될 수 있습니다.
+				</textarea>
+							<br>
+							<input type="radio" name="check" value="1">동의
+							<input type="radio" name="check" value="0">비동의
+			</fieldset>
+			<br>
+			<button type="button" onclick="javascript:if(agree()==true) submit();">회원가입</button>
+			<input type="reset" value="다시쓰기">
+			<button type="button" onclick="winClose()">돌아가기</button>
+		</form>
+		
+		</center>
+	</body>
+</html>

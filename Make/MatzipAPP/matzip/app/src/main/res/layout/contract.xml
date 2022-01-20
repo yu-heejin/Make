@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="1080px"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="1080px"
+                android:layout_height="1276dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:gravity="center"
+                android:lineSpacingExtra="10dp"
+                android:text="이 약관은 맛집모아가 제공하는 서비스의 이용과 관련하여 회사와 회원과의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.\n\n
+정보통신망법 규정에 따라 맛집모아에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
+\n\n[수집하는 개인정보 항목]
+\n\n이용자는 회원가입을 해야만 정보 검색, 뉴스 보기 등 대부분의 서비스를 이용할 수 있습니다.\n이용자가 서비스를 이용하기 위해 회원가입을 할 경우, 맛집모아는 서비스 이용을 위해 필요한 최소한의 개인정보를 수집합니다.
+        \n\n- 이름, 이메일, 휴대전화번호, 성별, 주소, 생일
+        \n\n\n서비스 이용과정이나 사업처리 과정에서 아래와 같은 정보들이 자동으로 생성되어 수집될 수 있습니다.
+        \n\n- 쿠키, 방문일시, 서비스 이용기록 등
+        \n\n\n만 14세 미만 가입자에 경우 다음과 같은 항목들이 요구됩니다.
+        \n\n- 부모님 및 보호자의 연락처 및 동의여부
+        \n\n\n유료 서비스를 이용하는 과정에서 아래와 같은 정보들이 요구됩니다.
+        \n1) 신용카드 결제 : 카드사 및 카드번호 등의 정보\n2) 휴대전화 결제 : 휴대폰번호, 통신사, 결제 승인번호 등\n3) 계좌이체 : 은행명, 계좌번호 등\n4) 상품권 등의 기프트카드 및 온라인 쿠폰 : 해당 쿠폰의 결제번호\n
+        \n\n* 이 외의 기타 결제 수단을 이용할 경우 해당 수단과 관련된 정보가 요구될 수 있습니다."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="58dp"
+                android:fontFamily="@font/gmarketsansttfbold"
+                android:text="맛집모아"
+                android:textColor="#1C1C1C"
+                android:textSize="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="74dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="392dp"
+                android:layout_marginEnd="12dp"
+                android:backgroundTint="#7E1334"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:text="비번확인"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="299dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="236dp"
+                android:background="@drawable/enterbox"
+                android:ems="10"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:hint="  이름"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword3"
+                android:layout_width="299dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="392dp"
+                android:background="@drawable/enterbox"
+                android:ems="10"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:hint="  비밀번호확인"
+                android:inputType="textPassword"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button12"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="564dp"
+                android:layout_marginEnd="45dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:onClick="contract"
+                android:text="약관보기  >"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="107dp"
+                android:fontFamily="@font/gmarketsansttfbold"
+                android:text="in월곡"
+                android:textColor="#1C1C1C"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="323dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="623dp"
+                android:backgroundTint="#7E1334"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:text="회원가입"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName7"
+                android:layout_width="299dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="496dp"
+                android:background="@drawable/enterbox"
+                android:ems="10"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:hint="  휴대폰번호"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName5"
+                android:layout_width="299dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="288dp"
+                android:background="@drawable/enterbox"
+                android:ems="10"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:hint="  아이디"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="144dp"
+                android:fontFamily="@font/gmarketsansttfbold"
+                android:text="회원가입"
+                android:textColor="#1C1C1C"
+                android:textSize="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName6"
+                android:layout_width="299dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="444dp"
+                android:background="@drawable/enterbox"
+                android:ems="10"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:hint="  이메일"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="74dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="288dp"
+                android:layout_marginEnd="12dp"
+                android:backgroundTint="#7E1334"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:text="중복확인"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="564dp"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:text="개인정보 이용약관 동의 (필수)"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword2"
+                android:layout_width="299dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="340dp"
+                android:background="@drawable/enterbox"
+                android:ems="10"
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:hint="  비밀번호"
+                android:inputType="textPassword"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
