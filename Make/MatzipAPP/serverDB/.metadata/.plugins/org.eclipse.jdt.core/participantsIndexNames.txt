@@ -1,5 +1,0 @@
-INDEX VERSION 1.131
-C:\Users\20200\Desktop\serverDB\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4165395310.index
-\serverDB\src\main\java
-C:\Users\20200\Desktop\serverDB\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2542337852.index
-\DbConn\src\main\java
